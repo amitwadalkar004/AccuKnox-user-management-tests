@@ -1,12 +1,12 @@
-# Ignore virtual environment folders
 venv/
-.env/
+   env/
+   ENV/
+   .venv/
 
-# Ignore Python cache
-__pycache__/
-*.pyc
-*.pyo
+   __pycache__/
+   *.pyc
+   *.pyo
 
-# Ignore OS files
-.DS_Store
-Thumbs.db
+   *.log
+   system_health_monitor.log
+   app_health_checker.log
