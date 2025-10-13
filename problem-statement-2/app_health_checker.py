@@ -37,7 +37,7 @@ def write_to_log(message):
     log_message = f"[{timestamp}] {message}\n"
     
     try:
-        with open(LOG_FILE, 'a') as f:
+        with open(LOG_FILE, 'a', encoding='utf-8') as f:  # ← Fixed!
             f.write(log_message)
     except Exception as e:
         print(f"Error writing to log: {e}")
@@ -231,8 +231,8 @@ def save_report(results):
             'applications': results
         }
         
-        with open(REPORT_FILE, 'w') as f:
-            json.dump(report, f, indent=2)
+        with open(REPORT_FILE, 'w', encoding='utf-8') as f:  # ← Add encoding
+            json.dump(report, f, indent=2, ensure_ascii=False)  # ← Add ensure_ascii=False
         
         print_and_log(f"\n✓ Report saved to: {REPORT_FILE}")
         

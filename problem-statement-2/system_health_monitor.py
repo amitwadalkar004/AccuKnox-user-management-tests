@@ -38,7 +38,7 @@ def write_to_log(message, log_file=LOG_FILE):
     log_message = f"[{timestamp}] {message}\n"
     
     try:
-        with open(log_file, 'a') as f:
+        with open(log_file, 'a', encoding='utf-8') as f:  # ← Fixed!
             f.write(log_message)
     except Exception as e:
         print(f"Error writing to log: {e}")

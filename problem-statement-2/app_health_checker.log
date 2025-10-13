@@ -10,3 +10,11 @@ Checking health of: www.google.com (https://www.google.com/)
 Checking health of: opensource-demo.orangehrmlive.com (https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers)
 [2025-10-12 19:41:22] HTTP Status Code: 200 (Success)
 [2025-10-12 19:41:22] Response Time: 3094.88ms
+[2025-10-13 09:07:40] 
+Checking health of: www.google.com (https://www.google.com/)
+[2025-10-13 09:07:42] Status: ✓ UP
+[2025-10-13 09:07:42] HTTP Status Code: 200 (Success)
+[2025-10-13 09:07:42] Response Time: 2239.70ms
+[2025-10-13 09:07:42] ✓ Application is functioning correctly
+[2025-10-13 09:07:42] 
+✓ Check complete! Log saved to: app_health_checker.log
