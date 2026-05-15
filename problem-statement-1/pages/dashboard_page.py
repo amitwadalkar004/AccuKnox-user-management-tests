@@ -22,6 +22,7 @@ class DashboardPage(BasePage):
         # Wait for Admin page to load - check for System Users table or Add button
         self.wait_for_element(self.ADD_BUTTON, timeout=15000)
     
+    
     def verify_admin_page_loaded(self):
         """Verify Admin page is loaded successfully"""
         expect(self.page.locator(self.ADMIN_PAGE_HEADER)).to_be_visible()

@@ -52,7 +52,7 @@ def print_and_log(message, is_alert=False):
 
 def send_alert(alert_type, current_value, threshold):
     """Send alert when threshold is exceeded"""
-    alert_message = f"⚠️  ALERT: {alert_type} exceeded threshold! Current: {current_value}% | Threshold: {threshold}%"
+    alert_message = f"  ALERT: {alert_type} exceeded threshold! Current: {current_value}% | Threshold: {threshold}%"
     print_and_log(alert_message, is_alert=True)
 
 # ======================= MONITORING FUNCTIONS =======================

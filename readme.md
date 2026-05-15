@@ -46,7 +46,7 @@ This repository contains solutions for the AccuKnox QA Trainee Practical Assessm
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Problem Statement 1
 ```bash

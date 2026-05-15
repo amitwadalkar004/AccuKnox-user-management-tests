@@ -1,0 +1,30 @@
+{
+  "timestamp": "2025-10-13 13:44:09",
+  "total_checked": 2,
+  "up_count": 1,
+  "down_count": 1,
+  "applications": [
+    {
+      "application": "google",
+      "url": "https://www.google.com/",
+      "timestamp": "2025-10-13 13:44:04",
+      "status": "success",
+      "status_code": 200,
+      "response_time_ms": 2686.99,
+      "is_up": true,
+      "message": "✓ Application is UP and functioning correctly",
+      "error": null
+    },
+    {
+      "application": "yahoo",
+      "url": "https://www.yahoo.com/",
+      "timestamp": "2025-10-13 13:44:07",
+      "status": "client_error",
+      "status_code": 429,
+      "response_time_ms": 1540.69,
+      "is_up": false,
+      "message": "⚠ Application is DOWN (Client Error)",
+      "error": null
+    }
+  ]
+}
