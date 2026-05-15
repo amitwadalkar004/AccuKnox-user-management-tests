@@ -15,10 +15,6 @@ class BasePage:
     def fill_text(self, locator: str, text: str):
         self.page.locator(locator).fill(text)
     
-
-
-
-    
     def get_text(self, locator: str) -> str:
         return self.page.locator(locator).text_content()
     
