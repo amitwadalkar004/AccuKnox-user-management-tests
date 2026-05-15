@@ -9,6 +9,7 @@ class BasePage:
         self.page.goto(url)
         self.page.wait_for_load_state("networkidle")
     
+    
     def click_element(self, locator: str):
         self.page.locator(locator).click()
     

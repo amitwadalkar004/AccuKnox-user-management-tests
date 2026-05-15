@@ -56,3 +56,35 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 playwright install
 pytest tests/test_user_management.py -v
+```
+
+### Problem Statement 2
+```bash
+cd problem-statement-2
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+python system_health_monitor.py
+python app_health_checker.py
+```
+
+---
+
+## 🔄 CI/CD Pipeline
+
+### GitHub Actions
+Automated testing is configured to run on every pull request to ensure code quality:
+
+- **Trigger**: Pull requests to `main`, `master`, or `develop` branches
+- **Scope**: Changes to `problem-statement-1/` directory or workflow files
+- **Environment**: Ubuntu with Python 3.8
+- **Tests**: Playwright E2E tests run in headless mode
+- **Browsers**: Chromium (for faster execution)
+
+### Workflow Details
+- Installs Python dependencies from `requirements.txt`
+- Installs Playwright browsers automatically
+- Runs all test cases with verbose output
+- Fails the PR if any test fails
+
+📁 [View CI/CD Configuration](.github/workflows/run-tests.yml)
