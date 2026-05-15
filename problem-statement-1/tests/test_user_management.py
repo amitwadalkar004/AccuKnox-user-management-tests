@@ -22,7 +22,6 @@ def setup(page: Page):
     # Navigate to Admin module
     dashboard_page = DashboardPage(page)
     dashboard_page.navigate_to_admin()
-    
     return page
 
 class TestUserManagement:
