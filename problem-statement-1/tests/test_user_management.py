@@ -9,6 +9,9 @@ from utils.test_data import TestData
 # Global variable to store username across tests
 created_username = None
 
+
+
+
 @pytest.fixture(scope="function")
 def setup(page: Page):
     # Navigate to application
