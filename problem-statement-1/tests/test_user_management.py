@@ -45,10 +45,11 @@ class TestUserManagement:
         
         login_page = LoginPage(page)
         login_page.login(TestData.USERNAME, TestData.PASSWORD)
-        
+
         dashboard_page = DashboardPage(page)
         dashboard_page.navigate_to_admin()
         dashboard_page.verify_admin_page_loaded()
+        
         
         print("✓ Navigated to Admin module")
     
