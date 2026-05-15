@@ -12,6 +12,9 @@ class BasePage:
     def click_element(self, locator: str):
         self.page.locator(locator).click()
     
+
+
+    
     def fill_text(self, locator: str, text: str):
         self.page.locator(locator).fill(text)
     
