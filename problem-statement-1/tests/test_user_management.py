@@ -6,11 +6,10 @@ from pages.dashboard_page import DashboardPage
 from pages.user_management_page import UserManagementPage
 from utils.test_data import TestData
 
+
+
 # Global variable to store username across tests
 created_username = None
-
-
-
 
 @pytest.fixture(scope="function")
 def setup(page: Page):

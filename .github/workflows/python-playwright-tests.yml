@@ -3,10 +3,10 @@ name: CI
 on:
   push:
     branches:
-      - main
+      - test_branch
   pull_request:
     branches:
-      - main
+      - test_branch
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
